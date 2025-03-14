@@ -1,10 +1,10 @@
-// Reemplaza la primera línea con:
-const leerLinea = require('readline-sync');
 
-const Sumar = require("./Sumar");
-const Restar = require("./Restar");
+const readline = require('readline');
 
-const interfazConsola = leerLinea.createInterface({
+const Sumar = require("./Suma");
+const Restar = require("./Resta");
+
+const interfazConsola = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
@@ -19,6 +19,12 @@ interfazConsola.question("porfavor ingrese el primer numero ", (numero1) => {
                 console.log(`Su suma es ${Sumar(n1, n2)}`);
             } else if (parseInt(operacion) == 2) {
                 console.log(`Su resta es ${Restar(n1, n2)}`);
+            } else if (operacion === '3') {
+                console.log("¡Hasta luego!");
+                interfazConsola.close();
+            } else {
+                console.log("Opción inválida");
+                calcular();
             }
         });
     });
