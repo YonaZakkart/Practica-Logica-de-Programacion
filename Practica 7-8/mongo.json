@@ -1,0 +1,18 @@
+{
+  "ussers": [
+    {
+      "id": "de8fa04b-4ade-4d8e-9534-253c773c3e75",
+      "name": "yona",
+      "lastname": "a",
+      "dui": "1234",
+      "correo": "asdf"
+    },
+    {
+      "id": "f6cc5329-774b-455f-9160-8834e49f314a",
+      "name": "ying",
+      "lastname": "yuan",
+      "dui": "1209876",
+      "correo": "ying@gmail.com"
+    }
+  ]
+}
